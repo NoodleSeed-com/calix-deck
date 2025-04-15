@@ -1,0 +1,214 @@
+\documentclass[9pt,letterpaper]{article}
+
+% Core packages
+\usepackage[margin=0.6in]{geometry}
+\usepackage{multicol}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[table]{colortbl}
+\usepackage{tikz}
+\usetikzlibrary{chains,shapes.arrows,fit,positioning,calc}
+\usepackage{pgfplots}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+\pgfplotsset{compat=1.18}
+
+% Set up background layers for timeline
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+% Setting up fonts
+\setmainfont{Poppins}[
+    UprightFont = Poppins-Regular,
+    BoldFont = Poppins-Bold,
+    ItalicFont = Poppins-Italic,
+    BoldItalicFont = Poppins-BoldItalic
+]
+
+% Define Noodle Seed Colors
+\definecolor{NoodleBlue}{RGB}{41,131,255}
+\definecolor{NoodleGreen}{RGB}{0,219,170}
+\definecolor{FundingBlue}{RGB}{52,149,235}
+\definecolor{FundingTeal}{RGB}{0,192,165}
+\definecolor{FundingYellow}{RGB}{254,204,141}
+\definecolor{FundingBlack}{RGB}{34,34,34}
+
+% Spacing definitions
+\newcommand{\sectionSpaceBefore}{0.5cm}
+\newcommand{\sectionSpaceAfter}{0.3cm}
+\newcommand{\itemVerticalSep}{0.25em}
+\newcommand{\itemParseSep}{0.15em}
+\newcommand{\itemTopSep}{0.25em}
+\newcommand{\columnSep}{1.0cm}
+\newcommand{\headerLogoHeight}{1.3cm}
+\newcommand{\headerSpaceAfterLogo}{0.2cm}
+\newcommand{\headerLineSpacing}{0.05cm}
+\newcommand{\headerBottomSpace}{0.1cm}
+\newcommand{\footerTopSpace}{0.1cm}
+\newcommand{\footerLineSpacing}{0.03cm}
+
+% Layout dimensions
+\newcommand{\founderColWidth}{0.48\textwidth}
+\newcommand{\footerWidth}{0.98\textwidth}
+
+% Standard font sizes
+\newcommand{\stdFootnoteSize}{\footnotesize}
+
+% Standard itemize settings
+\setlist[itemize]{leftmargin=*,label={\textbullet},itemsep=\itemVerticalSep,parsep=\itemParseSep,topsep=\itemTopSep}
+
+% Create section marker command
+\newcommand{\sectmarker}[1]{%
+    \noindent
+    \tikz[baseline]{
+        \pgfmathsetmacro{\sideL}{0.25}
+        \pgfmathsetmacro{\rad}{\sideL/2}
+        % Square with top-right and bottom-left corners rounded
+        \fill[NoodleGreen] 
+        (0,0) -- (\sideL cm,0) -- 
+        (\sideL cm,\sideL cm-\rad cm) arc (0:90:\rad cm) -- 
+        (\rad cm,\sideL cm) -- (0,\sideL cm) -- 
+        (0,\rad cm) arc (180:270:\rad cm) -- cycle;
+    }
+    \hspace{0.2cm}\textbf{\large #1}
+    \vspace{\sectionSpaceAfter}
+}
+
+% Create header
+\newcommand{\noodleheader}{%
+    \begin{center}
+        \vspace*{\headerBottomSpace}
+        % Noodle Seed Logo 
+        \includegraphics[height=\headerLogoHeight]{image.png}
+        
+        \vspace{\headerSpaceAfterLogo}
+        {\large\textbf{Turn 2-6 Week Software Projects into }\textcolor{NoodleGreen}{\textbf{Minutes}}}\\
+        \vspace{\headerLineSpacing}
+        {\normalsize\textbf{— No Developers Required —}}
+        \vspace{\headerBottomSpace}
+    \end{center}
+}
+
+% Document starts
+
+\begin{document}
+\pagestyle{empty}
+
+% Header with logo
+\noodleheader
+
+% Main two-column content
+\begin{multicols}{2}
+    \setlength{\columnsep}{\columnSep}
+    \setlength{\parskip}{0pt}
+    
+    % Left column
+    \sectmarker{Solving a Real Google Problem}
+    \begin{itemize}
+        \item Google teams needed \textcolor{NoodleBlue}{2-6 weeks} to build software projects
+        \item We compress to \textcolor{NoodleGreen}{minutes} with no coding skills
+        \item \textcolor{NoodleBlue}{15 Google employees} using platform (\textcolor{NoodleGreen}{12 active} past 30 days)
+        \item Business users create apps with embedded AI agents
+        \item Eliminates cross-team coordination bottlenecks
+    \end{itemize}
+    
+    \vspace{\sectionSpaceBefore}
+    
+    \sectmarker{Proprietary Technology}
+    \begin{itemize}
+        \item Seed Specification: 25x more efficient than direct code generation
+        \item AI agents replace multiple developer and design roles
+        \item One interface builds UIs, APIs, and automations
+        \item Works across cloud platforms without manual integration
+        \item Open source core with proprietary enterprise features
+    \end{itemize}
+    
+    \columnbreak
+    
+    % Right column
+    \sectmarker{Massive Market Opportunity}
+    \begin{itemize}
+        \item Prototyping software market: \textcolor{NoodleBlue}{\$4.5B+}
+        \item Only 29\% of software projects on time (Standish Group)
+        \item AI-assisted development cuts time by \textcolor{NoodleGreen}{50\%}
+        \item Market growing at 11\% CAGR through 2033
+        \item Expanding to broader enterprise software market
+    \end{itemize}
+    
+    \vspace{\sectionSpaceBefore}
+    
+    \sectmarker{Team \& Investment}
+    \begin{itemize}
+        \item Founder: Ex-Google AI/ML leader with 15+ years experience 
+        \item Strong technical team: 4 senior founding engineers
+        \item Hiring: Amazon Principal Engineer as CTO
+        \item \$500K raised from strategic angels
+    \end{itemize}
+    
+    \vspace{\sectionSpaceBefore}
+    
+    % Timeline section
+    \sectmarker{12-Month Roadmap}
+    \begin{itemize}
+        \item \textbf{Q1 (Completed):} Launch Beta, Seed Spec MVP, Onboard Google
+        \item \textbf{Q2:} Agentic Workflows, Agent Building, Automation
+        \item \textbf{Q3:} Enterprise Security, Scale Features
+        \item \textbf{Q4:} B2B Focus, Commercialization
+    \end{itemize}
+    
+\end{multicols}
+
+\vspace{\sectionSpaceBefore}
+
+% Funding section (full width)
+\sectmarker{Seeking \$1.3M Pre-Seed Funding}
+\begin{itemize}
+    \item \textbf{\textcolor{FundingBlue}{35\%} Core Technology:} Language, ML/AI, Infrastructure
+    \item \textbf{\textcolor{FundingTeal}{30\%} Product Dev:} Full-stack, UX, Testing
+    \item \textbf{\textcolor{FundingYellow}{20\%} Go-to-Market:} Customer Success, Sales
+    \item \textbf{\textcolor{FundingBlack}{15\%} Operations:} Legal/IP, G\&A, Buffer
+\end{itemize}
+
+\vspace{\sectionSpaceBefore}
+
+% Founder contact section
+\sectmarker{Contact the Founders}
+
+\begin{tabularx}{\textwidth}{X X}
+    % Fahd Rafi info
+    \begin{minipage}[t]{\founderColWidth}
+        \vspace{0pt}% Align at the very top
+        \textbf{Fahd Rafi} - fahd@noodleseed.com\\
+        \stdFootnoteSize{15+ Years Enterprise AI/ML (Google, Microsoft, HP)}\\
+        \stdFootnoteSize{Oxford (Financial Strategy)}\\
+        \stdFootnoteSize{linkedin.com/in/fahdrafi/}
+    \end{minipage}
+    &
+    % Asad Iqbal info
+    \begin{minipage}[t]{\founderColWidth}
+        \vspace{0pt}% Align at the very top
+        \textbf{Asad Iqbal} - asad@noodleseed.com\\
+        \stdFootnoteSize{VP Innovation, Product Strategy}\\
+        \stdFootnoteSize{Start-Up Leadership}\\
+        \stdFootnoteSize{linkedin.com/in/asad-iqbal-khan/}
+    \end{minipage}
+\end{tabularx}
+
+% Footer message
+\vspace{\footerTopSpace}
+\begin{center}
+    \begin{minipage}{\footerWidth}
+        \centering
+        \stdFootnoteSize{\textbf{Building foundations for enterprise-grade apps and agents}}\\
+        \vspace{\footerLineSpacing}
+        \stdFootnoteSize{\textbf{Google teams use our platform to compress weeks into \textcolor{NoodleGreen}{minutes}}}\\
+        \vspace{\footerLineSpacing}
+        \stdFootnoteSize{\textcolor{NoodleBlue}{\textbf{Join us in transforming how enterprises build software}}}
+    \end{minipage}
+\end{center}
+
+\end{document}
