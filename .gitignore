@@ -61,10 +61,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-## PDF generation
-# Uncomment if you don't want to track PDF files
-# pdfs/
-# *.pdf
+## Build outputs
+dist/
+src/html/index.html
+src/html/index-built.html
+
+## Generated files
+*.pdf
+*.png
 
 ## Temporary files
 tmp/
