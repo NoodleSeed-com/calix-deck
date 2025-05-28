@@ -63,6 +63,27 @@ dist/html/
 - Uses A4 landscape format with optimized margins
 - High-quality PNG generation at 300 DPI using native macOS tools
 
+### Build Validation Process
+
+**IMPORTANT**: After running `npm run build`, always validate the generated slides:
+
+1. **Check all PNG outputs** - Look at each PNG in `dist/react-pdf/pngs/` to verify:
+   - No text is cut off or overlapping
+   - All content is visible and properly laid out
+   - Colors and styling are correct
+   - No blank or partially rendered slides
+
+2. **Common issues to check for**:
+   - Text overflow in boxes (reduce font size or padding)
+   - Missing content (check for unsupported CSS properties)
+   - Blank slides (often due to border styling issues)
+   - Icon rendering problems (verify SVG compatibility)
+
+3. **If issues are found**:
+   - Fix the React component in `src/react-pdf/build-pdf.js`
+   - Rebuild with `npm run build`
+   - Re-validate all slides again
+
 ### Key Features
 
 - **Research-backed structure** - 8-slide format based on investor deck best practices

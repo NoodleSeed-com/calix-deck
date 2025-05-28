@@ -568,26 +568,26 @@ function createSlide1() {
         React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
             
             React.createElement(View, { style: { flexDirection: 'row', gap: 20, marginBottom: 32 } },
-                React.createElement(View, { style: { flex: 1, padding: 24, borderRadius: 12, backgroundColor: colors.backgroundGreen, textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: 20, fontWeight: 'bold', color: colors.coralGreen, marginBottom: 12, textAlign: 'center' } }, "Proven Traction"),
-                    React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.coralGreen, marginBottom: 8, textAlign: 'center' } }, "$120K"),
-                    React.createElement(Text, { style: { fontSize: 14, marginBottom: 4, textAlign: 'center' } }, "Contracted ARR"),
-                    React.createElement(Text, { style: { fontSize: 12, marginBottom: 8, textAlign: 'center' } }, "3 signed customers, 3-year contracts"),
-                    React.createElement(Text, { style: { fontSize: 12, fontWeight: 'bold', color: colors.coralGreen, textAlign: 'center' } }, "Oct 2024 → May 2025")
+                React.createElement(View, { style: { flex: 1, padding: 20, borderRadius: 12, backgroundColor: colors.backgroundGreen, textAlign: 'center' } },
+                    React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.coralGreen, marginBottom: 8, textAlign: 'center' } }, "Proven Traction"),
+                    React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.coralGreen, marginBottom: 6, textAlign: 'center' } }, "$120K"),
+                    React.createElement(Text, { style: { fontSize: 13, marginBottom: 3, textAlign: 'center' } }, "Contracted ARR"),
+                    React.createElement(Text, { style: { fontSize: 11, marginBottom: 6, textAlign: 'center', lineHeight: 1.3 } }, "3 signed customers\n3-year contracts"),
+                    React.createElement(Text, { style: { fontSize: 11, fontWeight: 'bold', color: colors.coralGreen, textAlign: 'center' } }, "Oct 2024 → May 2025")
                 ),
-                React.createElement(View, { style: { flex: 1, padding: 24, borderRadius: 12, backgroundColor: colors.backgroundPeach, textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: 20, fontWeight: 'bold', color: colors.peach, marginBottom: 12, textAlign: 'center' } }, "The Opportunity"),
-                    React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.peach, marginBottom: 8, textAlign: 'center' } }, "$2.2T"),
-                    React.createElement(Text, { style: { fontSize: 14, marginBottom: 4, textAlign: 'center' } }, "Software Market"),
-                    React.createElement(Text, { style: { fontSize: 12, marginBottom: 4, textAlign: 'center' } }, "Anyone can get custom software & agents"),
-                    React.createElement(Text, { style: { fontSize: 12, textAlign: 'center' } }, "Eliminates cost, risk, time, talent barriers")
+                React.createElement(View, { style: { flex: 1, padding: 20, borderRadius: 12, backgroundColor: colors.backgroundPeach, textAlign: 'center' } },
+                    React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.peach, marginBottom: 8, textAlign: 'center' } }, "The Opportunity"),
+                    React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.peach, marginBottom: 6, textAlign: 'center' } }, "$2.2T"),
+                    React.createElement(Text, { style: { fontSize: 13, marginBottom: 3, textAlign: 'center' } }, "Software Market"),
+                    React.createElement(Text, { style: { fontSize: 11, marginBottom: 3, textAlign: 'center', lineHeight: 1.3 } }, "Anyone can get custom\nsoftware & agents"),
+                    React.createElement(Text, { style: { fontSize: 11, textAlign: 'center', lineHeight: 1.3 } }, "Eliminates cost, risk,\ntime, talent barriers")
                 ),
-                React.createElement(View, { style: { flex: 1, padding: 24, borderRadius: 12, backgroundColor: colors.backgroundLight, textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: 20, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 12, textAlign: 'center' } }, "The Ask"),
-                    React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 8, textAlign: 'center' } }, "$2.5M"),
-                    React.createElement(Text, { style: { fontSize: 14, marginBottom: 4, textAlign: 'center' } }, "Seed Round"),
-                    React.createElement(Text, { style: { fontSize: 12, marginBottom: 4, textAlign: 'center' } }, "Scale from 3 to 30 customers"),
-                    React.createElement(Text, { style: { fontSize: 12, textAlign: 'center' } }, "$1M ARR in 12 months")
+                React.createElement(View, { style: { flex: 1, padding: 20, borderRadius: 12, backgroundColor: colors.backgroundLight, textAlign: 'center' } },
+                    React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 8, textAlign: 'center' } }, "The Ask"),
+                    React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 6, textAlign: 'center' } }, "$2.5M"),
+                    React.createElement(Text, { style: { fontSize: 13, marginBottom: 3, textAlign: 'center' } }, "Seed Round"),
+                    React.createElement(Text, { style: { fontSize: 11, marginBottom: 3, textAlign: 'center', lineHeight: 1.3 } }, "Scale from 3 to\n30 customers"),
+                    React.createElement(Text, { style: { fontSize: 11, textAlign: 'center' } }, "$1M ARR in 12 months")
                 )
             ),
 
@@ -611,34 +611,61 @@ function createSlide2() {
             React.createElement(Text, { style: { fontSize: 18, color: colors.textMuted } }, "The transformation happening in software development")
         ),
 
-        React.createElement(View, { style: { flex: 1, justifyContent: 'center', textAlign: 'center' } },
+        React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
             
-            // Simple, powerful market stat
-            React.createElement(View, { style: { marginBottom: 32 } },
-                React.createElement(Text, { style: { fontSize: 64, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center', marginBottom: 8 } }, "$2.2T"),
-                React.createElement(Text, { style: { fontSize: 20, color: colors.textMuted, textAlign: 'center', marginBottom: 4 } }, "Global Software & Agents Market by 2034"),
-                React.createElement(Text, { style: { fontSize: 14, color: colors.textMuted, textAlign: 'center' } }, "— Precedence Research")
-            ),
-
-            // Three key insights
+            // Market breakdown
             React.createElement(View, { style: { flexDirection: 'row', gap: 20, marginBottom: 24 } },
-                React.createElement(View, { style: { flex: 1, padding: 20, borderRadius: 12, backgroundColor: colors.backgroundGreen, textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.coralGreen, marginBottom: 8, textAlign: 'center' } }, "Cost → Zero"),
-                    React.createElement(Text, { style: { fontSize: 14, textAlign: 'center', lineHeight: 1.4 } }, "No upfront development investment")
+                // Total addressable market
+                React.createElement(View, { style: { flex: 1, backgroundColor: colors.backgroundLight, padding: 20, borderRadius: 12, textAlign: 'center' } },
+                    React.createElement(Text, { style: { fontSize: 14, color: colors.textMuted, marginBottom: 8, textAlign: 'center' } }, "Total Addressable Market"),
+                    React.createElement(Text, { style: { fontSize: 48, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center', marginBottom: 4 } }, "$2.2T"),
+                    React.createElement(Text, { style: { fontSize: 12, color: colors.textMuted, textAlign: 'center' } }, "Global Software & Agents by 2034")
                 ),
-                React.createElement(View, { style: { flex: 1, padding: 20, borderRadius: 12, backgroundColor: colors.backgroundPeach, textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.peach, marginBottom: 8, textAlign: 'center' } }, "Access → Universal"),
-                    React.createElement(Text, { style: { fontSize: 14, textAlign: 'center', lineHeight: 1.4 } }, "Get profitable software without technical expertise")
-                ),
-                React.createElement(View, { style: { flex: 1, padding: 20, borderRadius: 12, backgroundColor: colors.backgroundLight, textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 8, textAlign: 'center' } }, "Value → Exponential"),
-                    React.createElement(Text, { style: { fontSize: 14, textAlign: 'center', lineHeight: 1.4 } }, "Custom solutions deliver measurable ROI")
+                
+                // Immediate opportunity
+                React.createElement(View, { style: { flex: 2, backgroundColor: colors.backgroundGreen, padding: 20, borderRadius: 12 } },
+                    React.createElement(Text, { style: { fontSize: 14, color: colors.textMuted, marginBottom: 8, textAlign: 'center' } }, "Immediate Opportunity"),
+                    React.createElement(Text, { style: { fontSize: 48, fontWeight: 'bold', color: colors.coralGreen, textAlign: 'center', marginBottom: 8 } }, "$150B"),
+                    React.createElement(Text, { style: { fontSize: 14, fontWeight: 'bold', textAlign: 'center', marginBottom: 4 } }, "Small Business Custom Software"),
+                    React.createElement(View, { style: { flexDirection: 'row', gap: 12, justifyContent: 'center' } },
+                        React.createElement(View, { style: { flex: 1 } },
+                            React.createElement(Text, { style: { fontSize: 12, textAlign: 'center', marginBottom: 4 } }, "• 33M US small businesses"),
+                            React.createElement(Text, { style: { fontSize: 12, textAlign: 'center' } }, "• $30-100K software needs")
+                        ),
+                        React.createElement(View, { style: { flex: 1 } },
+                            React.createElement(Text, { style: { fontSize: 12, textAlign: 'center', marginBottom: 4 } }, "• Currently underserved"),
+                            React.createElement(Text, { style: { fontSize: 12, textAlign: 'center' } }, "• Perfect for our model")
+                        )
+                    )
                 )
             ),
 
-            // Supporting context
-            React.createElement(View, { style: { backgroundColor: colors.californiaBlue, padding: 24, borderRadius: 12, textAlign: 'center' } },
-                React.createElement(Text, { style: { fontSize: 22, fontWeight: 'bold', color: 'white', textAlign: 'center' } }, "This is the opportunity we're going after")
+            // Our wedge
+            React.createElement(View, { style: { backgroundColor: colors.backgroundPeach, padding: 20, borderRadius: 12, marginBottom: 20 } },
+                React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: colors.peach, marginBottom: 12, textAlign: 'center' } }, "Our Initial Wedge: $1B"),
+                React.createElement(View, { style: { flexDirection: 'row', gap: 16 } },
+                    React.createElement(View, { style: { flex: 1, textAlign: 'center' } },
+                        React.createElement(Text, { style: { fontSize: 28, fontWeight: 'bold', color: colors.peach, marginBottom: 4 } }, "10K"),
+                        React.createElement(Text, { style: { fontSize: 12, marginBottom: 2 } }, "Target businesses"),
+                        React.createElement(Text, { style: { fontSize: 11, color: colors.textMuted } }, "Operations-heavy SMBs")
+                    ),
+                    React.createElement(View, { style: { flex: 1, textAlign: 'center' } },
+                        React.createElement(Text, { style: { fontSize: 28, fontWeight: 'bold', color: colors.peach, marginBottom: 4 } }, "$100K"),
+                        React.createElement(Text, { style: { fontSize: 12, marginBottom: 2 } }, "Average contract value"),
+                        React.createElement(Text, { style: { fontSize: 11, color: colors.textMuted } }, "Proven with current customers")
+                    ),
+                    React.createElement(View, { style: { flex: 1, textAlign: 'center' } },
+                        React.createElement(Text, { style: { fontSize: 28, fontWeight: 'bold', color: colors.peach, marginBottom: 4 } }, "1%"),
+                        React.createElement(Text, { style: { fontSize: 12, marginBottom: 2 } }, "Market capture"),
+                        React.createElement(Text, { style: { fontSize: 11, color: colors.textMuted } }, "Achievable in 5 years")
+                    )
+                )
+            ),
+
+            // Why now
+            React.createElement(View, { style: { backgroundColor: colors.californiaBlue, padding: 20, borderRadius: 12, textAlign: 'center' } },
+                React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: 8 } }, "Why This Market Is Ready Now"),
+                React.createElement(Text, { style: { fontSize: 14, color: 'white', textAlign: 'center' } }, "AI makes custom software profitable at small business scale for the first time")
             )
         )
     );
@@ -651,51 +678,55 @@ function createSlide3() {
         orientation: "landscape",
         style: baseStyles.page
     },
-        React.createElement(View, { style: { textAlign: 'center', marginTop: 40, marginBottom: 32 } },
-            React.createElement(Text, { style: { fontSize: 28, fontWeight: 'bold', marginBottom: 12, color: colors.californiaBlue } }, "The Problem"),
-            React.createElement(Text, { style: { fontSize: 18, color: colors.textMuted } }, "Four massive blockers prevent businesses from getting working systems")
-        ),
+        React.createElement(View, { style: { flex: 1, padding: 20 } },
+            // Header
+            React.createElement(View, { style: { marginBottom: 20 } },
+                React.createElement(Text, { style: { fontSize: 28, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center', marginBottom: 8 } }, "The Problem"),
+                React.createElement(Text, { style: { fontSize: 16, color: colors.textMuted, textAlign: 'center' } }, "Four massive blockers prevent businesses from getting working systems")
+            ),
 
-        React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
-            React.createElement(View, { style: { flexDirection: 'row', gap: 16, marginBottom: 24 } },
-                React.createElement(View, { style: { flex: 1, backgroundColor: '#fee', padding: 18, borderRadius: 12, borderLeft: `4px solid ${colors.red}` } },
-                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 } },
-                        React.createElement(DollarIcon, { size: 24, color: colors.red }),
-                        React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: colors.red, marginLeft: 8 } }, "Cost")
+            // Four problems in a row
+            React.createElement(View, { style: { flexDirection: 'row', gap: 12, marginBottom: 16 } },
+                React.createElement(View, { style: { flex: 1, backgroundColor: '#ffeeee', padding: 14, borderRadius: 10 } },
+                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 } },
+                        React.createElement(DollarIcon, { size: 20, color: colors.red }),
+                        React.createElement(Text, { style: { fontSize: 14, fontWeight: 'bold', color: colors.red, marginLeft: 6 } }, "Cost")
                     ),
-                    React.createElement(Text, { style: { fontSize: 13, lineHeight: 1.4 } }, "$100K-$500K minimum with no guarantee")
+                    React.createElement(Text, { style: { fontSize: 11 } }, "$100K-$500K minimum with no guarantee")
                 ),
-                React.createElement(View, { style: { flex: 1, backgroundColor: '#fee', padding: 18, borderRadius: 12, borderLeft: `4px solid ${colors.red}` } },
-                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 } },
-                        React.createElement(AlertTriangleIcon, { size: 24, color: colors.red }),
-                        React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: colors.red, marginLeft: 8 } }, "Risk")
+                React.createElement(View, { style: { flex: 1, backgroundColor: '#ffeeee', padding: 14, borderRadius: 10 } },
+                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 } },
+                        React.createElement(AlertTriangleIcon, { size: 20, color: colors.red }),
+                        React.createElement(Text, { style: { fontSize: 14, fontWeight: 'bold', color: colors.red, marginLeft: 6 } }, "Risk")
                     ),
-                    React.createElement(Text, { style: { fontSize: 13, lineHeight: 1.4 } }, "No ROI visibility before massive commitment")
+                    React.createElement(Text, { style: { fontSize: 11 } }, "No ROI visibility before massive commitment")
                 ),
-                React.createElement(View, { style: { flex: 1, backgroundColor: '#fee', padding: 18, borderRadius: 12, borderLeft: `4px solid ${colors.red}` } },
-                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 } },
-                        React.createElement(ClockIcon, { size: 24, color: colors.red }),
-                        React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: colors.red, marginLeft: 8 } }, "Time")
+                React.createElement(View, { style: { flex: 1, backgroundColor: '#ffeeee', padding: 14, borderRadius: 10 } },
+                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 } },
+                        React.createElement(ClockIcon, { size: 20, color: colors.red }),
+                        React.createElement(Text, { style: { fontSize: 14, fontWeight: 'bold', color: colors.red, marginLeft: 6 } }, "Time")
                     ),
-                    React.createElement(Text, { style: { fontSize: 13, lineHeight: 1.4 } }, "6-18 months minimum delivery")
+                    React.createElement(Text, { style: { fontSize: 11 } }, "6-18 months minimum delivery")
                 ),
-                React.createElement(View, { style: { flex: 1, backgroundColor: '#fee', padding: 18, borderRadius: 12, borderLeft: `4px solid ${colors.red}` } },
-                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 } },
-                        React.createElement(UserIcon, { size: 24, color: colors.red }),
-                        React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: colors.red, marginLeft: 8 } }, "Talent")
+                React.createElement(View, { style: { flex: 1, backgroundColor: '#ffeeee', padding: 14, borderRadius: 10 } },
+                    React.createElement(View, { style: { flexDirection: 'row', alignItems: 'center', marginBottom: 6 } },
+                        React.createElement(UserIcon, { size: 20, color: colors.red }),
+                        React.createElement(Text, { style: { fontSize: 14, fontWeight: 'bold', color: colors.red, marginLeft: 6 } }, "Talent")
                     ),
-                    React.createElement(Text, { style: { fontSize: 13, lineHeight: 1.4 } }, "Can't attract developers who know AI tools")
+                    React.createElement(Text, { style: { fontSize: 11 } }, "Can't attract developers who know AI tools")
                 )
             ),
 
-            React.createElement(View, { style: { backgroundColor: colors.backgroundLight, padding: 20, borderRadius: 12, marginBottom: 20 } },
-                React.createElement(Text, { style: { fontSize: 18, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 12, textAlign: 'center' } }, "Expensive consultants and slow IT projects aren't the answer"),
-                React.createElement(Text, { style: { fontSize: 14, textAlign: 'center', lineHeight: 1.5, marginBottom: 8 } }, "Traditional consulting firms charge massive fees with uncertain outcomes"),
-                React.createElement(Text, { style: { fontSize: 14, textAlign: 'center', lineHeight: 1.5 } }, "Business owners need working systems, not technical complexity")
+            // Middle section
+            React.createElement(View, { style: { backgroundColor: colors.backgroundLight, padding: 16, borderRadius: 10, marginBottom: 16 } },
+                React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: 8, textAlign: 'center' } }, "Expensive consultants and slow IT projects aren't the answer"),
+                React.createElement(Text, { style: { fontSize: 12, textAlign: 'center', marginBottom: 4 } }, "Traditional consulting firms charge massive fees with uncertain outcomes"),
+                React.createElement(Text, { style: { fontSize: 12, textAlign: 'center' } }, "Business owners need working systems, not technical complexity")
             ),
 
-            React.createElement(View, { style: { backgroundColor: colors.californiaBlue, padding: 20, borderRadius: 12, textAlign: 'center' } },
-                React.createElement(Text, { style: { fontSize: 16, fontWeight: 'bold', color: 'white', textAlign: 'center' } }, "Businesses lose money waiting for solutions that actually solve their problems")
+            // Bottom CTA
+            React.createElement(View, { style: { backgroundColor: colors.californiaBlue, padding: 16, borderRadius: 10 } },
+                React.createElement(Text, { style: { fontSize: 14, fontWeight: 'bold', color: 'white', textAlign: 'center' } }, "Businesses lose money waiting for solutions that actually solve their problems")
             )
         ),
 
@@ -1093,7 +1124,7 @@ async function generatePDF() {
             createSlide6(), // The Team
             createSlide7(), // The Plan
             createSlide8(), // The Investment (CTA)
-            createSlide9(), // Close
+            createSlide9()  // Close - no trailing comma
         );
         
         const pdfBuffer = await renderToBuffer(PresentationDocument);

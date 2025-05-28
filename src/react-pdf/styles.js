@@ -31,6 +31,7 @@ const colors = {
   error: '#BA1A1A',            // Material error
   success: '#216E39',          // Material success green
   warning: '#C46500',          // Material warning amber
+  red: '#BA1A1A',              // Same as error for compatibility
 };
 
 // Material Design 3 Typography Scale
