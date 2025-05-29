@@ -34,50 +34,104 @@ const colors = {
   red: '#BA1A1A',              // Same as error for compatibility
 };
 
-// Material Design 3 Typography Scale
+// Noodle Seed Asymmetrical Corner Design System
+// Based on logo pattern: top-left sharp, top-right rounded, bottom-left rounded, bottom-right sharp
+const cornerStyles = {
+  // Standard radius for rounded corners
+  radius: 16,
+  
+  // Primary container style (follows logo pattern exactly)
+  primary: {
+    borderTopLeftRadius: 0,      // Sharp like logo
+    borderTopRightRadius: 16,    // Rounded like logo
+    borderBottomLeftRadius: 16,  // Rounded like logo 
+    borderBottomRightRadius: 0,  // Sharp like logo
+  },
+  
+  // Secondary variations (creative but consistent)
+  secondary: {
+    borderTopLeftRadius: 16,     // Opposite of primary
+    borderTopRightRadius: 0,     
+    borderBottomLeftRadius: 0,   
+    borderBottomRightRadius: 16, 
+  },
+  
+  // Accent style (diagonal pattern)
+  accent: {
+    borderTopLeftRadius: 16,     
+    borderTopRightRadius: 16,    
+    borderBottomLeftRadius: 0,   
+    borderBottomRightRadius: 0,  
+  },
+  
+  // Alternative accent (reverse diagonal)
+  accentReverse: {
+    borderTopLeftRadius: 0,      
+    borderTopRightRadius: 0,     
+    borderBottomLeftRadius: 16,  
+    borderBottomRightRadius: 16, 
+  },
+  
+  // Subtle variation (single corner emphasis)
+  subtle: {
+    borderTopLeftRadius: 0,      
+    borderTopRightRadius: 16,    
+    borderBottomLeftRadius: 0,   
+    borderBottomRightRadius: 0,  
+  },
+  
+  // For small elements/cards
+  small: {
+    borderTopLeftRadius: 0,      
+    borderTopRightRadius: 8,     
+    borderBottomLeftRadius: 8,   
+    borderBottomRightRadius: 0,  
+  }
+};
+
+// Optimized spacing system (8px base grid)
+const spacing = {
+  xs: 4,    // Micro spacing
+  sm: 8,    // Small spacing  
+  md: 16,   // Medium spacing
+  lg: 24,   // Large spacing
+  xl: 32,   // Extra large spacing
+  xxl: 48,  // Section spacing
+};
+
+// Presentation-Optimized Typography Scale (Based on Research)
 const typography = {
-  // Display (Large headlines)
-  displayLarge: 57,
-  displayMedium: 45,
-  displaySmall: 36,
+  // Primary Headers (Slide Titles)
+  slideTitle: 32,        // Optimized for readability and impact
+  sectionTitle: 24,      // Section headers within slides
   
-  // Headlines
-  headlineLarge: 32,
-  headlineMedium: 28,
-  headlineSmall: 24,
+  // Content Typography  
+  bodyLarge: 18,         // Primary content text (increased from 16)
+  bodyMedium: 16,        // Secondary content text (increased from 14)
+  bodySmall: 14,         // Tertiary content text (increased from 12)
   
-  // Titles 
-  titleLarge: 22,
-  titleMedium: 16,
-  titleSmall: 14,
-  
-  // Labels
-  labelLarge: 14,
-  labelMedium: 12,
-  labelSmall: 11,
-  
-  // Body
-  bodyLarge: 16,
-  bodyMedium: 14,
-  bodySmall: 12,
+  // Labels and Supporting Text
+  labelLarge: 16,        // Important labels (increased from 14)
+  labelMedium: 14,       // Standard labels (increased from 12)
+  labelSmall: 12,        // Small labels (increased from 11)
   
   // Legacy aliases for compatibility
-  h1: 36,      // displaySmall
-  h2: 28,      // headlineMedium
-  h3: 24,      // headlineSmall
-  h4: 22,      // titleLarge
-  body: 16,    // bodyLarge
-  small: 14,   // bodyMedium
-  tiny: 12,    // bodySmall
+  h1: 32,      // slideTitle
+  h2: 24,      // sectionTitle  
+  h3: 20,      // Large emphasis text
+  h4: 18,      // bodyLarge
+  body: 16,    // bodyMedium
+  small: 14,   // bodySmall
+  tiny: 12,    // labelSmall
 };
 
 // Base styles for all slides
 const baseStyles = StyleSheet.create({
-  // Page layout
+  // Page layout (optimized for better space utilization)
   page: {
     flexDirection: 'column',
     backgroundColor: colors.white,
-    padding: 24,
+    padding: spacing.lg,
     fontFamily: 'Helvetica',
   },
   
@@ -176,37 +230,55 @@ const baseStyles = StyleSheet.create({
     flex: 1,
   },
   
-  // Cards and sections
-  card: {
-    backgroundColor: colors.white,
-    borderRadius: 12,
-    padding: 24,
-    marginBottom: 20,
-    shadowColor: colors.textLight,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    border: `1px solid ${colors.textLight}20`,
+  // Asymmetrical Container System (following Noodle Seed logo pattern)
+  
+  // Primary containers (main content blocks)
+  containerPrimary: {
+    backgroundColor: colors.californiaBlue,
+    padding: spacing.lg,
+    marginBottom: spacing.md,
+    ...cornerStyles.primary,
   },
   
-  cardBlue: {
+  // Secondary containers (supporting content)
+  containerSecondary: {
     backgroundColor: colors.backgroundLight,
-    borderLeft: `4px solid ${colors.californiaBlue}`,
+    padding: spacing.md,
+    marginBottom: spacing.md,
+    ...cornerStyles.secondary,
   },
   
-  cardGreen: {
+  // Accent containers (highlights/CTAs)
+  containerAccent: {
     backgroundColor: colors.backgroundGreen,
-    borderLeft: `4px solid ${colors.coralGreen}`,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+    ...cornerStyles.accent,
   },
   
-  cardPeach: {
+  // Alternative accent containers
+  containerAccentAlt: {
     backgroundColor: colors.backgroundPeach,
-    borderLeft: `4px solid ${colors.peach}`,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+    ...cornerStyles.accentReverse,
   },
   
-  cardRed: {
+  // Error/warning containers
+  containerError: {
     backgroundColor: '#FFF8F8',
-    borderLeft: `4px solid ${colors.red}`,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+    ...cornerStyles.subtle,
+  },
+  
+  // Small card elements
+  cardSmall: {
+    backgroundColor: colors.white,
+    padding: spacing.sm,
+    marginBottom: spacing.xs,
+    border: `1px solid ${colors.textLight}30`,
+    ...cornerStyles.small,
   },
   
   // Metrics and stats
@@ -322,5 +394,7 @@ const baseStyles = StyleSheet.create({
 export {
   colors,
   typography,
+  cornerStyles,
+  spacing,
   baseStyles
 };
