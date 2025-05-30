@@ -28,10 +28,10 @@ const colors = {
   backgroundPeach: '#FFF8F0',   // Light orange tint
   
   // Status Colors
-  error: '#BA1A1A',            // Material error
+  error: '#64748B',            // Professional slate gray instead of red
   success: '#216E39',          // Material success green
   warning: '#C46500',          // Material warning amber
-  red: '#BA1A1A',              // Same as error for compatibility
+  red: '#64748B',              // Professional slate gray for competitive elements
 };
 
 // Noodle Seed Asymmetrical Corner Design System

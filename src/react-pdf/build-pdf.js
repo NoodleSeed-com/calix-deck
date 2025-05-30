@@ -727,6 +727,14 @@ function createSlide2() {
                 React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.xs } }, "Why This Market Is Ready Now"),
                 React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: 'white', textAlign: 'center' } }, "AI makes custom software profitable at small business scale for the first time")
             )
+        ),
+
+        // Logo in bottom right
+        React.createElement(View, { style: { position: 'absolute', bottom: 20, right: 20 } },
+            React.createElement(Image, { 
+                src: logoPath, 
+                style: { width: 80, height: 'auto', maxHeight: 20 } 
+            })
         )
     );
 }
@@ -853,7 +861,7 @@ function createSlide4() {
             React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: colors.textMuted } }, "Two completely different business models")
         ),
 
-        React.createElement(View, { style: { flex: 1, justifyContent: 'space-between', paddingBottom: spacing.sm } },
+        React.createElement(View, { style: { flex: 1, paddingLeft: spacing.lg, paddingRight: spacing.lg, paddingBottom: spacing.xs, justifyContent: 'center' } },
             // Competition business model
             React.createElement(View, { style: { marginBottom: spacing.md } },
                 React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', marginBottom: spacing.sm, color: colors.red, textAlign: 'center' } }, "All AI Coding Tools: Sell Developer Licenses"),
@@ -1179,19 +1187,19 @@ function createSlide7() {
         orientation: "landscape",
         style: baseStyles.page
     },
-        React.createElement(View, { style: { textAlign: 'center', marginTop: spacing.xl, marginBottom: spacing.lg } },
-            React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.sm, color: colors.californiaBlue } }, "The Team"),
+        React.createElement(View, { style: { textAlign: 'center', marginTop: spacing.lg, marginBottom: spacing.sm } },
+            React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.xs, color: colors.californiaBlue } }, "The Team"),
             React.createElement(Text, { style: { fontSize: typography.bodyLarge, color: colors.textMuted } }, "Google-trained founders with proven track record")
         ),
 
         React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
 
-        React.createElement(View, { style: { flexDirection: 'row', gap: spacing.lg, marginBottom: spacing.lg } },
+        React.createElement(View, { style: { flexDirection: 'row', gap: spacing.md, marginBottom: spacing.md } },
             React.createElement(View, { 
                 style: { 
                     flex: 1, 
                     backgroundColor: colors.backgroundLight, 
-                    padding: spacing.lg, 
+                    padding: spacing.md, 
                     textAlign: 'center',
                     ...cornerStyles.accent 
                 } 
@@ -1210,7 +1218,7 @@ function createSlide7() {
                 style: { 
                     flex: 1, 
                     backgroundColor: colors.backgroundPeach, 
-                    padding: spacing.lg, 
+                    padding: spacing.md, 
                     textAlign: 'center',
                     ...cornerStyles.accentReverse 
                 } 
@@ -1229,12 +1237,12 @@ function createSlide7() {
         React.createElement(View, { 
             style: { 
                 backgroundColor: colors.backgroundLight, 
-                padding: spacing.lg,
+                padding: spacing.md,
                 ...cornerStyles.primary 
             } 
         },
-            React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: spacing.md, textAlign: 'center' } }, "Why We'll Succeed"),
-            React.createElement(View, { style: { flexDirection: 'row', gap: spacing.md } },
+            React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: spacing.sm, textAlign: 'center' } }, "Why We'll Succeed"),
+            React.createElement(View, { style: { flexDirection: 'row', gap: spacing.sm } },
                 React.createElement(View, { style: { flex: 1, textAlign: 'center' } },
                     React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: spacing.xs } }, "1"),
                     React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', marginBottom: spacing.xs } }, "We Know the Problem"),
@@ -1429,9 +1437,9 @@ function createSlide9() {
                     ...cornerStyles.accentReverse 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.peach, marginBottom: spacing.sm } }, "20x"),
-                React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', marginBottom: spacing.sm } }, "Target Return"),
-                React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "Based on $100M+ exit potential")
+                React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.peach, marginBottom: spacing.sm } }, "$1M"),
+                React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', marginBottom: spacing.sm } }, "ARR Target"),
+                React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "Proven path from $120K to $1M")
             )
         ),
 
@@ -1495,10 +1503,21 @@ function createSlide9() {
                 ...cornerStyles.primary 
             } 
         },
-            React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.xs } }, "Join Us Now"),
-            React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', textAlign: 'center', marginBottom: spacing.xs } }, "Fahd Rafi, Founder"),
-            React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: 'white', textAlign: 'center', marginBottom: spacing.xs } }, "fahd@noodleseed.com"),
-            React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white', textAlign: 'center', fontStyle: 'italic' } }, "Live demo: noodleseed.com")
+            React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.sm } }, "Why Invest Now"),
+            React.createElement(View, { style: { flexDirection: 'row', gap: spacing.md } },
+                React.createElement(View, { style: { flex: 1 } },
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs, textAlign: 'center' } }, "Proven Model"),
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white', textAlign: 'center' } }, "$120K ARR with 3 customers")
+                ),
+                React.createElement(View, { style: { flex: 1 } },
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs, textAlign: 'center' } }, "Clear Path"),
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white', textAlign: 'center' } }, "Scale from 3 to 30 customers")
+                ),
+                React.createElement(View, { style: { flex: 1 } },
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs, textAlign: 'center' } }, "Right Time"),
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white', textAlign: 'center' } }, "AI makes it profitable now")
+                )
+            )
         )
         ),
 
@@ -1552,7 +1571,9 @@ function createSlide10() {
                 } 
             },
                 React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.sm } }, "Experience the Future Today"),
-                React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: 'white', textAlign: 'center' } }, "noodleseed.com")
+                React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: 'white', textAlign: 'center', marginBottom: spacing.lg } }, "noodleseed.com"),
+                React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', textAlign: 'center', marginBottom: spacing.xs } }, "Fahd Rafi, Founder"),
+                React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: 'white', textAlign: 'center' } }, "fahd@noodleseed.com")
             )
         )
     );
