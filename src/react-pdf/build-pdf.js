@@ -608,7 +608,7 @@ function createSlide1() {
                     } 
                 },
                     React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: spacing.xs, textAlign: 'center' } }, "The Ask"),
-                    React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: spacing.xs, textAlign: 'center' } }, "$2.5M"),
+                    React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', color: colors.californiaBlue, marginBottom: spacing.xs, textAlign: 'center' } }, "$3M USD"),
                     React.createElement(Text, { style: { fontSize: typography.labelMedium, marginBottom: spacing.xs, textAlign: 'center' } }, "Seed Round"),
                     React.createElement(Text, { style: { fontSize: typography.labelSmall, marginBottom: spacing.xs, textAlign: 'center', lineHeight: 1.2 } }, "Scale from 3 to\n30 customers"),
                     React.createElement(Text, { style: { fontSize: typography.labelSmall, textAlign: 'center' } }, "$1M ARR in 12 months")
@@ -857,55 +857,69 @@ function createSlide4() {
         style: baseStyles.page
     },
         React.createElement(View, { style: { textAlign: 'center', marginTop: spacing.md, marginBottom: spacing.sm } },
-            React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.xs, color: colors.californiaBlue } }, "The Competition"),
-            React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: colors.textMuted } }, "Two completely different business models")
+            React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.xs, color: colors.californiaBlue } }, "The Competitive Landscape"),
+            React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: colors.textMuted } }, "Everyone else makes tools. We deliver solutions.")
         ),
 
         React.createElement(View, { style: { flex: 1, paddingLeft: spacing.lg, paddingRight: spacing.lg, paddingBottom: spacing.xs, justifyContent: 'center' } },
-            // Competition business model
-            React.createElement(View, { style: { marginBottom: spacing.md } },
-                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', marginBottom: spacing.sm, color: colors.red, textAlign: 'center' } }, "All AI Coding Tools: Sell Developer Licenses"),
-                React.createElement(View, { style: { flexDirection: 'row', gap: spacing.sm } },
-                    React.createElement(View, { 
-                        style: { 
-                            flex: 1, 
-                            backgroundColor: '#FFF8F8', 
-                            padding: spacing.md, 
-                            ...cornerStyles.small 
-                        } 
-                    },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.red, marginBottom: spacing.xs } }, "GitHub Copilot"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, marginBottom: spacing.xs } }, "• $10-39/dev/month"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, fontWeight: 'bold', color: colors.red } }, "X Customer builds it")
-                    ),
-                    React.createElement(View, { 
-                        style: { 
-                            flex: 1, 
-                            backgroundColor: '#FFF8F8', 
-                            padding: spacing.md, 
-                            ...cornerStyles.secondary 
-                        } 
-                    },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.red, marginBottom: spacing.xs } }, "Cursor / Devin AI"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, marginBottom: spacing.xs } }, "• $20-500/dev/month"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, fontWeight: 'bold', color: colors.red } }, "X Customer owns code")
-                    ),
-                    React.createElement(View, { 
-                        style: { 
-                            flex: 1, 
-                            backgroundColor: '#FFF8F8', 
-                            padding: spacing.md, 
-                            ...cornerStyles.subtle 
-                        } 
-                    },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.red, marginBottom: spacing.xs } }, "Lovable / v0"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, marginBottom: spacing.xs } }, "• $25-50/dev/month"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, fontWeight: 'bold', color: colors.red } }, "X Customer manages")
-                    )
+            
+            // Three categories of competitors
+            React.createElement(View, { style: { flexDirection: 'row', gap: spacing.sm, marginBottom: spacing.md } },
+                React.createElement(View, { 
+                    style: { 
+                        flex: 1, 
+                        backgroundColor: '#FFF8F8', 
+                        padding: spacing.sm,
+                        ...cornerStyles.small 
+                    } 
+                },
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.red, marginBottom: spacing.xs, textAlign: 'center' } }, "AI Code Generators"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, marginBottom: spacing.xs, textAlign: 'center' } }, "Lovable, v0, Cursor, Devin"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, fontWeight: 'bold', color: colors.red, textAlign: 'center' } }, "Target: Developers"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, textAlign: 'center' } }, "Output: Code to manage")
+                ),
+                React.createElement(View, { 
+                    style: { 
+                        flex: 1, 
+                        backgroundColor: '#FFF8F8', 
+                        padding: spacing.sm,
+                        ...cornerStyles.secondary 
+                    } 
+                },
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.red, marginBottom: spacing.xs, textAlign: 'center' } }, "No-Code Platforms"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, marginBottom: spacing.xs, textAlign: 'center' } }, "OutSystems, Bubble, Retool"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, fontWeight: 'bold', color: colors.red, textAlign: 'center' } }, "Target: Power Users"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, textAlign: 'center' } }, "Output: Apps to build")
+                ),
+                React.createElement(View, { 
+                    style: { 
+                        flex: 1, 
+                        backgroundColor: '#FFF8F8', 
+                        padding: spacing.sm,
+                        ...cornerStyles.subtle 
+                    } 
+                },
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.red, marginBottom: spacing.xs, textAlign: 'center' } }, "Custom Dev Agencies"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, marginBottom: spacing.xs, textAlign: 'center' } }, "Traditional consulting firms"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, fontWeight: 'bold', color: colors.red, textAlign: 'center' } }, "Target: Enterprises"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, textAlign: 'center' } }, "Output: $500K+ projects")
                 )
             ),
 
-            // Noodle Seed difference (Primary container with logo pattern)
+            // The problem with competitors
+            React.createElement(View, { 
+                style: { 
+                    backgroundColor: colors.backgroundPeach, 
+                    padding: spacing.sm, 
+                    marginBottom: spacing.sm,
+                    ...cornerStyles.accent 
+                } 
+            },
+                React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', color: colors.peach, textAlign: 'center', marginBottom: spacing.xs } }, "The Problem with All Current Solutions"),
+                React.createElement(Text, { style: { fontSize: typography.labelMedium, textAlign: 'center', lineHeight: 1.3 } }, "Business owners want working solutions, not tools to learn, code to manage, or $500K projects")
+            ),
+
+            // Noodle Seed difference (Primary container)
             React.createElement(View, { 
                 style: { 
                     backgroundColor: colors.californiaBlue, 
@@ -915,36 +929,24 @@ function createSlide4() {
                     ...cornerStyles.primary 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.sm } }, "Noodle Seed: Sell Working Software as a Service"),
+                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.sm } }, "Noodle Seed: Working Business Systems as a Service"),
                 React.createElement(View, { style: { flexDirection: 'row', gap: spacing.md, justifyContent: 'center' } },
                     React.createElement(View, { style: { flex: 1 } },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Free to Build"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "AI makes code nearly free")
+                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Target: Business Owners"),
+                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "Who need systems that work")
                     ),
                     React.createElement(View, { style: { flex: 1 } },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Pay to Use"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "Per user/transaction pricing")
+                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Output: Ready Systems"),
+                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "No code, no building, no learning")
                     ),
                     React.createElement(View, { style: { flex: 1 } },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "We Own the IP"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "Reuse & resell to others")
+                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Pricing: Usage-Based"),
+                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "Pay for value delivered")
                     )
                 )
             ),
 
-            // Customer perspective (Secondary container)
-            React.createElement(View, { 
-                style: { 
-                    backgroundColor: colors.backgroundLight, 
-                    padding: spacing.sm, 
-                    marginBottom: spacing.xs,
-                    ...cornerStyles.accent 
-                } 
-            },
-                React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center', marginBottom: spacing.xs } }, "From Our Customer's Perspective"),
-                React.createElement(Text, { style: { fontSize: typography.bodySmall, textAlign: 'center', lineHeight: 1.3 } }, "An accounting firm partner doesn't want Cursor or Devin - they want an accounts receivable AI agent that works.")
-            ),
-
+            // Market gap
             React.createElement(View, { 
                 style: { 
                     backgroundColor: colors.backgroundGreen, 
@@ -953,8 +955,8 @@ function createSlide4() {
                     ...cornerStyles.accentReverse 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', color: colors.coralGreen, textAlign: 'center', marginBottom: spacing.xs } }, "We're Not an AI Coding Tool - We're a Software Company"),
-                React.createElement(Text, { style: { fontSize: typography.bodySmall, textAlign: 'center' } }, "Our customers never see code. They get working business systems.")
+                React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', color: colors.coralGreen, textAlign: 'center', marginBottom: spacing.xs } }, "We Fill the Market Gap"),
+                React.createElement(Text, { style: { fontSize: typography.labelMedium, textAlign: 'center', lineHeight: 1.3 } }, "No one else sells working business systems to SMBs at product speed and price")
             )
         ),
 
@@ -1409,7 +1411,7 @@ function createSlide9() {
     },
         React.createElement(View, { style: { textAlign: 'center', marginTop: spacing.xl, marginBottom: spacing.lg } },
             React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.sm, color: colors.californiaBlue } }, "The Investment"),
-            React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.coralGreen } }, "$2.5M Seed to scale proven model")
+            React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.coralGreen } }, "$3M USD Seed to scale proven model")
         ),
 
         React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
@@ -1424,7 +1426,7 @@ function createSlide9() {
                     ...cornerStyles.accent 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.sm } }, "$2.5M"),
+                React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.sm } }, "$3M USD"),
                 React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', marginBottom: spacing.sm } }, "Seed Round"),
                 React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "18 months runway to $1M ARR")
             ),
@@ -1698,9 +1700,164 @@ async function generatePNGs(pdfPath) {
     }
 }
 
+// Generate HTML index file
+async function generateHTML() {
+    console.log('🌐 Generating index.html...');
+    
+    const outputDir = path.join(process.cwd(), 'dist', 'react-pdf');
+    const htmlPath = path.join(outputDir, 'index.html');
+    
+    const htmlContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noodle Seed - Investor Pitch Deck</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .download-section {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .slides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .slide-preview {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .slide-preview:hover {
+            transform: translateY(-5px);
+        }
+
+        .slide-preview img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .slide-title {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Noodle Seed</h1>
+        <p style="font-size: 1.2rem; color: #888; margin-bottom: 40px;">Investor Pitch Deck</p>
+
+        <div class="download-section">
+            <h2>Download Complete Presentation</h2>
+            <p style="margin: 15px 0; color: #888;">Get the full investor deck as a PDF</p>
+            <a href="noodleseed-investor-deck.pdf" class="download-btn" download>
+                📄 Download PDF
+            </a>
+        </div>
+
+        <h3 style="margin-bottom: 20px;">Slide Previews</h3>
+        
+        <div class="slides-grid">
+            <div class="slide-preview">
+                <img src="pngs/slide-01.png" alt="Title + Hook" onclick="window.open('pngs/slide-01.png', '_blank')">
+                <div class="slide-title">1. Title + Hook</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-02.png" alt="The Problem" onclick="window.open('pngs/slide-02.png', '_blank')">
+                <div class="slide-title">2. The Problem</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-03.png" alt="Solution" onclick="window.open('pngs/slide-03.png', '_blank')">
+                <div class="slide-title">3. Solution</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-04.png" alt="Market Opportunity" onclick="window.open('pngs/slide-04.png', '_blank')">
+                <div class="slide-title">4. Market Opportunity</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-05.png" alt="Customer Proof" onclick="window.open('pngs/slide-05.png', '_blank')">
+                <div class="slide-title">5. Customer Proof</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-06.png" alt="Team" onclick="window.open('pngs/slide-06.png', '_blank')">
+                <div class="slide-title">6. Team</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-07.png" alt="Funding + Roadmap" onclick="window.open('pngs/slide-07.png', '_blank')">
+                <div class="slide-title">7. Funding + Roadmap</div>
+            </div>
+            <div class="slide-preview">
+                <img src="pngs/slide-08.png" alt="Investment Opportunity" onclick="window.open('pngs/slide-08.png', '_blank')">
+                <div class="slide-title">8. Investment Opportunity</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>`;
+
+    fs.writeFileSync(htmlPath, htmlContent);
+    console.log(`✅ HTML file generated: ${htmlPath}`);
+}
+
 // Main execution
 if (import.meta.url === `file://${process.argv[1]}`) {
     generatePDF()
+        .then(() => generateHTML())
         .then(() => {
             console.log('🎉 Build process completed successfully!');
             process.exit(0);
