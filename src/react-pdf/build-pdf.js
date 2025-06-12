@@ -562,7 +562,7 @@ function createSlide1() {
                     style: { width: 360, height: 'auto', maxHeight: 72 } 
                 })
             ),
-            React.createElement(Text, { style: { fontSize: typography.sectionTitle, color: colors.textMuted } }, "Business solutions delivered instantly, no development needed")
+            React.createElement(Text, { style: { fontSize: typography.sectionTitle, color: colors.textMuted } }, "Expert business consulting + AI automation for complete value generation")
         ),
 
         React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
@@ -578,9 +578,9 @@ function createSlide1() {
                     } 
                 },
                     React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.xs, textAlign: 'center' } }, "Proven Traction"),
-                    React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.xs, textAlign: 'center' } }, "$120K"),
+                    React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.xs, textAlign: 'center' } }, "$100K+"),
                     React.createElement(Text, { style: { fontSize: typography.labelMedium, marginBottom: spacing.xs, textAlign: 'center' } }, "Contracted ARR"),
-                    React.createElement(Text, { style: { fontSize: typography.labelSmall, marginBottom: spacing.xs, textAlign: 'center', lineHeight: 1.2 } }, "3 signed customers\n3-year contracts"),
+                    React.createElement(Text, { style: { fontSize: typography.labelSmall, marginBottom: spacing.xs, textAlign: 'center', lineHeight: 1.2 } }, "+ $300K warm pipeline\nNo dedicated sales team"),
                     React.createElement(Text, { style: { fontSize: typography.labelSmall, fontWeight: 'bold', color: colors.coralGreen, textAlign: 'center' } }, "Oct 2024 → May 2025")
                 ),
                 React.createElement(View, { 
@@ -748,7 +748,7 @@ function createSlide3() {
     },
         React.createElement(View, { style: { textAlign: 'center', marginTop: spacing.xl, marginBottom: spacing.lg } },
             React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.sm, color: colors.californiaBlue } }, "The Problem"),
-            React.createElement(Text, { style: { fontSize: typography.bodyLarge, color: colors.textMuted } }, "Four massive blockers prevent businesses from getting working systems")
+            React.createElement(Text, { style: { fontSize: typography.bodyLarge, color: colors.textMuted } }, "Four massive blockers prevent businesses from getting value-generating solutions")
         ),
 
         React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
@@ -823,7 +823,7 @@ function createSlide3() {
             },
                 React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', color: colors.peach, marginBottom: spacing.sm, textAlign: 'center' } }, "Expensive consultants and slow IT projects aren't the answer"),
                 React.createElement(Text, { style: { fontSize: typography.bodyMedium, textAlign: 'center', marginBottom: spacing.xs } }, "Traditional consulting firms charge massive fees with uncertain outcomes"),
-                React.createElement(Text, { style: { fontSize: typography.bodyMedium, textAlign: 'center' } }, "Business owners need working systems, not technical complexity")
+                React.createElement(Text, { style: { fontSize: typography.bodyMedium, textAlign: 'center' } }, "Business owners need consultants who understand their problems AND can build solutions")
             ),
 
             // Bottom CTA
@@ -929,11 +929,11 @@ function createSlide4() {
                     ...cornerStyles.primary 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.sm } }, "Noodle Seed: Working Business Systems as a Service"),
+                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: 'white', textAlign: 'center', marginBottom: spacing.sm } }, "Noodle Seed: Business Consulting + AI Automation"),
                 React.createElement(View, { style: { flexDirection: 'row', gap: spacing.md, justifyContent: 'center' } },
                     React.createElement(View, { style: { flex: 1 } },
-                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Target: Business Owners"),
-                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "Who need systems that work")
+                        React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Expert Consultants"),
+                        React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white' } }, "Discover problems & articulate value")
                     ),
                     React.createElement(View, { style: { flex: 1 } },
                         React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs } }, "Output: Ready Systems"),
@@ -979,7 +979,7 @@ function createSlide5() {
     },
         React.createElement(View, { style: { textAlign: 'center', marginTop: spacing.xl, marginBottom: spacing.lg } },
             React.createElement(Text, { style: { fontSize: typography.slideTitle, fontWeight: 'bold', marginBottom: spacing.sm, color: colors.californiaBlue } }, "The Solution"),
-            React.createElement(Text, { style: { fontSize: typography.bodyLarge, color: colors.textMuted } }, "Working business systems at product speed")
+            React.createElement(Text, { style: { fontSize: typography.bodyLarge, color: colors.textMuted } }, "Business consultant experts + AI automation for end-to-end solutions")
         ),
 
         React.createElement(View, { style: { flex: 1, justifyContent: 'center' } },
@@ -1029,7 +1029,7 @@ function createSlide5() {
                     ...cornerStyles.primary 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: 'white', textAlign: 'center' } }, "Working business systems, delivered for you, at product price & speed")
+                React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: 'white', textAlign: 'center' } }, "Discover problems, articulate value, build solutions, price & sell - all included")
             ),
 
             React.createElement(View, { style: { flexDirection: 'row', gap: spacing.sm } },
@@ -1042,8 +1042,8 @@ function createSlide5() {
                         ...cornerStyles.small 
                     } 
                 },
-                    React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.xs } }, "Pay for Results"),
-                    React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.3 } }, "Not consulting")
+                    React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.xs } }, "Expert Consulting"),
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.3 } }, "+ AI automation")
                 ),
                 React.createElement(View, { 
                     style: { 
@@ -1118,9 +1118,9 @@ function createSlide6() {
                     ...cornerStyles.accent 
                 } 
             },
-                React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.sm } }, "$120K"),
+                React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.sm } }, "$100K+"),
                 React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', marginBottom: spacing.xs } }, "Contracted ARR"),
-                React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted, marginBottom: spacing.xs } }, "3 signed customers (3yr contracts)"),
+                React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted, marginBottom: spacing.xs } }, "+ $300K warm pipeline"),
                 React.createElement(Text, { style: { fontSize: typography.labelSmall, fontWeight: 'bold', color: colors.coralGreen } }, "Oct 2024 → May 2025")
             ),
             React.createElement(View, { 
@@ -1253,12 +1253,12 @@ function createSlide7() {
                 React.createElement(View, { style: { flex: 1, textAlign: 'center' } },
                     React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.xs } }, "2"),
                     React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', marginBottom: spacing.xs } }, "We Have a Solution"),
-                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "Built system that delivers immediate business value")
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "Expert consulting + AI that builds & sells solutions")
                 ),
                 React.createElement(View, { style: { flex: 1, textAlign: 'center' } },
                     React.createElement(Text, { style: { fontSize: 32, fontWeight: 'bold', color: colors.peach, marginBottom: spacing.xs } }, "3"),
                     React.createElement(Text, { style: { fontSize: typography.labelLarge, fontWeight: 'bold', marginBottom: spacing.xs } }, "We Have Customers"),
-                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "$120K contracted ARR proves demand")
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "$100K+ contracted ARR + $300K pipeline")
                 )
             )
         )
@@ -1307,9 +1307,9 @@ function createSlide8() {
                     } 
                 },
                     React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', color: colors.coralGreen, marginBottom: spacing.sm, textAlign: 'center' } }, "Now"),
-                    React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.4, marginBottom: spacing.xs } }, "• Automated prototypes"),
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.4, marginBottom: spacing.xs } }, "• Working prototypes with automation"),
                     React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.4, marginBottom: spacing.xs } }, "• 6-8 week delivery"),
-                    React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.4 } }, "• $120K ARR")
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, lineHeight: 1.4 } }, "• $100K+ ARR")
                 ),
                 React.createElement(View, { 
                     style: { 
@@ -1441,7 +1441,7 @@ function createSlide9() {
             },
                 React.createElement(Text, { style: { fontSize: 36, fontWeight: 'bold', color: colors.peach, marginBottom: spacing.sm } }, "$1M"),
                 React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontWeight: 'bold', marginBottom: spacing.sm } }, "ARR Target"),
-                React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "Proven path from $120K to $1M")
+                React.createElement(Text, { style: { fontSize: typography.labelMedium, color: colors.textMuted } }, "Proven path from $100K+ to $1M")
             )
         ),
 
@@ -1509,7 +1509,7 @@ function createSlide9() {
             React.createElement(View, { style: { flexDirection: 'row', gap: spacing.md } },
                 React.createElement(View, { style: { flex: 1 } },
                     React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs, textAlign: 'center' } }, "Proven Model"),
-                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white', textAlign: 'center' } }, "$120K ARR with 3 customers")
+                    React.createElement(Text, { style: { fontSize: typography.labelMedium, color: 'white', textAlign: 'center' } }, "$100K+ ARR + $300K pipeline")
                 ),
                 React.createElement(View, { style: { flex: 1 } },
                     React.createElement(Text, { style: { fontSize: typography.labelLarge, color: 'white', fontWeight: 'bold', marginBottom: spacing.xs, textAlign: 'center' } }, "Clear Path"),
@@ -1557,10 +1557,7 @@ function createSlide10() {
                 React.createElement(Text, { style: { fontSize: typography.bodyLarge, fontStyle: 'italic', color: colors.californiaBlue, textAlign: 'center', marginBottom: spacing.sm, lineHeight: 1.4 } }, "\"Every business is a software business now. The question is: Will you build it or buy it ready-made?\""),
                 React.createElement(Text, { style: { fontSize: typography.labelLarge, color: colors.textMuted, textAlign: 'center', marginBottom: spacing.lg } }, "— Satya Nadella"),
                 React.createElement(View, { style: { textAlign: 'center' } },
-                    React.createElement(Text, { style: { fontSize: typography.bodyMedium, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center', marginBottom: spacing.sm } }, "At Noodle Seed, we change the"),
-                    React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.textMuted, textAlign: 'center', marginBottom: spacing.xs } }, "Build OR Buy"),
-                    React.createElement(Text, { style: { fontSize: typography.bodyMedium, color: colors.californiaBlue, textAlign: 'center', marginBottom: spacing.xs } }, "to"),
-                    React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center' } }, "Build AND Buy")
+                    React.createElement(Text, { style: { fontSize: typography.sectionTitle, fontWeight: 'bold', color: colors.californiaBlue, textAlign: 'center' } }, "Join the Future of Business Consulting")
                 )
             ),
             
