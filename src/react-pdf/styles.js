@@ -48,44 +48,44 @@ const cornerStyles = {
     borderBottomRightRadius: 0,  // Sharp like logo
   },
   
-  // Secondary variations (creative but consistent)
+  // Secondary variations (now consistent with primary pattern)
   secondary: {
-    borderTopLeftRadius: 16,     // Opposite of primary
-    borderTopRightRadius: 0,     
-    borderBottomLeftRadius: 0,   
-    borderBottomRightRadius: 16, 
+    borderTopLeftRadius: 0,      // Sharp like logo
+    borderTopRightRadius: 16,    // Rounded like logo
+    borderBottomLeftRadius: 16,  // Rounded like logo 
+    borderBottomRightRadius: 0,  // Sharp like logo
   },
   
-  // Accent style (diagonal pattern)
+  // Accent style (same as primary pattern)
   accent: {
-    borderTopLeftRadius: 16,     
-    borderTopRightRadius: 16,    
-    borderBottomLeftRadius: 0,   
-    borderBottomRightRadius: 0,  
+    borderTopLeftRadius: 0,      // Sharp like logo
+    borderTopRightRadius: 16,    // Rounded like logo
+    borderBottomLeftRadius: 16,  // Rounded like logo 
+    borderBottomRightRadius: 0,  // Sharp like logo
   },
   
-  // Alternative accent (reverse diagonal)
+  // Alternative accent (same as primary pattern)
   accentReverse: {
-    borderTopLeftRadius: 0,      
-    borderTopRightRadius: 0,     
-    borderBottomLeftRadius: 16,  
-    borderBottomRightRadius: 16, 
+    borderTopLeftRadius: 0,      // Sharp like logo
+    borderTopRightRadius: 16,    // Rounded like logo
+    borderBottomLeftRadius: 16,  // Rounded like logo 
+    borderBottomRightRadius: 0,  // Sharp like logo
   },
   
-  // Subtle variation (single corner emphasis)
+  // Subtle variation (same as primary pattern)
   subtle: {
-    borderTopLeftRadius: 0,      
-    borderTopRightRadius: 16,    
-    borderBottomLeftRadius: 0,   
-    borderBottomRightRadius: 0,  
+    borderTopLeftRadius: 0,      // Sharp like logo
+    borderTopRightRadius: 16,    // Rounded like logo
+    borderBottomLeftRadius: 16,  // Rounded like logo 
+    borderBottomRightRadius: 0,  // Sharp like logo
   },
   
-  // For small elements/cards
+  // For small elements/cards (reduced radius but same pattern)
   small: {
-    borderTopLeftRadius: 0,      
-    borderTopRightRadius: 8,     
-    borderBottomLeftRadius: 8,   
-    borderBottomRightRadius: 0,  
+    borderTopLeftRadius: 0,      // Sharp like logo
+    borderTopRightRadius: 8,     // Rounded like logo (half size)
+    borderBottomLeftRadius: 8,   // Rounded like logo (half size)
+    borderBottomRightRadius: 0,  // Sharp like logo
   }
 };
 
@@ -99,26 +99,27 @@ const spacing = {
   xxl: 48,  // Section spacing
 };
 
-// Presentation-Optimized Typography Scale (Based on Research)
+// Presentation-Optimized Typography Scale (Based on React PDF Research)
 const typography = {
-  // Primary Headers (Slide Titles)
-  slideTitle: 32,        // Optimized for readability and impact
+  // Primary Headers (Slide Titles) - minimum 10pt as per React PDF best practices
+  heroTitle: 32,         // For main slide titles
+  slideTitle: 28,        // Standard slide titles
   sectionTitle: 24,      // Section headers within slides
   
-  // Content Typography  
-  bodyLarge: 18,         // Primary content text (increased from 16)
-  bodyMedium: 16,        // Secondary content text (increased from 14)
-  bodySmall: 14,         // Tertiary content text (increased from 12)
+  // Content Typography - all above 10pt minimum
+  bodyLarge: 18,         // Primary content text
+  bodyMedium: 16,        // Secondary content text
+  bodySmall: 14,         // Tertiary content text
   
-  // Labels and Supporting Text
-  labelLarge: 16,        // Important labels (increased from 14)
-  labelMedium: 14,       // Standard labels (increased from 12)
-  labelSmall: 12,        // Small labels (increased from 11)
+  // Labels and Supporting Text - minimum 12pt for readability
+  labelLarge: 16,        // Important labels
+  labelMedium: 14,       // Standard labels
+  labelSmall: 12,        // Small labels (minimum recommended)
   
   // Legacy aliases for compatibility
-  h1: 32,      // slideTitle
-  h2: 24,      // sectionTitle  
-  h3: 20,      // Large emphasis text
+  h1: 32,      // heroTitle
+  h2: 28,      // slideTitle
+  h3: 24,      // sectionTitle  
   h4: 18,      // bodyLarge
   body: 16,    // bodyMedium
   small: 14,   // bodySmall
@@ -135,14 +136,14 @@ const baseStyles = StyleSheet.create({
     fontFamily: 'Helvetica',
   },
   
-  // Typography
+  // Typography with React PDF optimized line heights (1.2-1.5x font size)
   h1: {
     fontSize: typography.h1,
     fontWeight: 'bold',
     color: colors.textPrimary,
     textAlign: 'center',
     marginBottom: 16,
-    lineHeight: 1.1,
+    lineHeight: 1.2,  // 32 * 1.2 = 38.4pt
   },
   
   h2: {
@@ -151,7 +152,7 @@ const baseStyles = StyleSheet.create({
     color: colors.textPrimary,
     textAlign: 'center',
     marginBottom: 20,
-    lineHeight: 1.2,
+    lineHeight: 1.3,  // 28 * 1.3 = 36.4pt
   },
   
   h3: {
@@ -159,7 +160,7 @@ const baseStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: colors.textSecondary,
     marginBottom: 16,
-    lineHeight: 1.3,
+    lineHeight: 1.3,  // 24 * 1.3 = 31.2pt
   },
   
   h4: {
@@ -167,26 +168,26 @@ const baseStyles = StyleSheet.create({
     fontWeight: 'bold',
     color: colors.textSecondary,
     marginBottom: 12,
-    lineHeight: 1.3,
+    lineHeight: 1.4,  // 18 * 1.4 = 25.2pt
   },
   
   bodyText: {
     fontSize: typography.body,
     color: colors.textSecondary,
-    lineHeight: 1.6,
+    lineHeight: 1.5,  // 16 * 1.5 = 24pt
     marginBottom: 16,
   },
   
   smallText: {
     fontSize: typography.small,
     color: colors.textMuted,
-    lineHeight: 1.5,
+    lineHeight: 1.4,  // 14 * 1.4 = 19.6pt
   },
   
   tinyText: {
     fontSize: typography.tiny,
     color: colors.textLight,
-    lineHeight: 1.4,
+    lineHeight: 1.4,  // 12 * 1.4 = 16.8pt
   },
   
   // Brand colors
